@@ -1,0 +1,3939 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Extent Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Automation Exercise Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Jan 1, 2024 11:14:16 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Jan 1, 2024 11:14:16 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Jan 1, 2024 11:22:16 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>2</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>3</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='40%'>
+<b>2</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='60%'><b>3</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='61%'><b>16</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='38%'><b>10</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='73%'><b>252</b> steps passed</small></div>
+<div>
+<small data-tooltip='2%'><b>10</b> steps failed,
+<b>83</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Test Cases 6, 7, 8, 9, 10 and 11":76.933,"Test Cases 12, 13, 14, 15 and 16":110.759,"Test 17, Test 18, Test 19, Test 20 and Test 21":122.822,"Test Cases 1, 2, 3, 4, and 5":43.332,"Test Cases 22, 23, 24, 25 and 26":123.888
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@regression</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@HU</td>
+<td>16</td>
+<td>10</td>
+<td>0</td>
+<td>0</td>
+<td>61.538%</td>
+</tr>
+<tr>
+<td>@Regression</td>
+<td>16</td>
+<td>10</td>
+<td>0</td>
+<td>0</td>
+<td>61.538%</td>
+</tr>
+<tr>
+<td>@Sanity</td>
+<td>2</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>40%</td>
+</tr>
+<tr>
+<td>@Smoke</td>
+<td>6</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>60%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Engineer</td>
+<td>HU</td>
+</tr>
+<tr>
+<td>Project</td>
+<td>Automation Exercise</td>
+</tr>
+<tr>
+<td>os</td>
+<td>Windows</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 2,
+failParent: 3,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 16,
+failChild: 10,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 252,
+failGrandChild: 10,
+warningGrandChild: 0,
+skipGrandChild: 83,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@regression</a><a class="dropdown-item" href="#">@HU</a><a class="dropdown-item" href="#">@Regression</a><a class="dropdown-item" href="#">@Sanity</a><a class="dropdown-item" href="#">@Smoke</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Cases 6, 7, 8, 9, 10 and 11</p>
+            <p class="text-sm">
+              <span>11:14:18 PM</span> / <span>00:01:16:933</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test Cases 6, 7, 8, 9, 10 and 11</h5>
+<span class='badge badge-success'>01.01.2024 11:14:18 PM</span>
+<span class='badge badge-danger'>01.01.2024 11:15:35 PM</span>
+<span class='badge badge-default'>00:01:16:933</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As an User I want to check
+Test Case 6 Contact Us Form
+Test Case 7 Verify Test Cases Page
+Test Case 8 Verify All Products and product detail page
+Test Case 9 Search Product
+Test Case 10 Verify Subscription in home page
+Test Case 11 Verify Subscription in Cart page</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Test Case 6 Contact Us Form</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iLaunchTheBrowser()">
+                <span>Given I launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iNavigateToGivenUrl()">
+                <span>And I navigate to given url</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iVerifyThatHomePageIsVisibleSuccessfully()">
+                <span>And I verify that home page is visible successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iClickOnSignupLoginButton(java.lang.String)">
+                <span>When I click on 'Contact Us' button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iVerifyGETINTOUCHGETINTOUCHIsVisible(java.lang.String)">
+                <span>And I verify GET IN TOUCH 'GET IN TOUCH' is visible</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iEnterNameEmailSubjectAndMessage(java.lang.String,java.lang.String,java.lang.String,java.lang.String)">
+                <span>And I enter name "Neil" email "ncstar000@test.com" subject "Feedback" and message "Excellent Website for Automation"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iUploadFile()">
+                <span>And I upload file</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iClickSubmitSubmitButton(java.lang.String)">
+                <span>And I click submit 'Submit' button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iClickOKButton()">
+                <span>And I click OK button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iVerifySuccessMessageSuccessYourDetailsHaveBeenSubmittedSuccessfullyIsVisible(java.lang.String)">
+                <span>And I Verify success message 'Success! Your details have been submitted successfully.' is visible</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iClickHomeButtonAndVerifyThatLandedToHomePageSuccessfully(java.lang.String)">
+                <span>Then I click 'Home' button and verify that landed to home page successfully</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="16"><span class="badge log pass-bg mr-2">Pass</span>Test Case 7 Verify Test Cases Page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iLaunchTheBrowser()">
+                <span>Given I launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iNavigateToGivenUrl()">
+                <span>And I navigate to given url</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iVerifyThatHomePageIsVisibleSuccessfully()">
+                <span>And I verify that home page is visible successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iClickOnSignupLoginButton(java.lang.String)">
+                <span>When I click on 'Test Cases' button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iVerifyUserIsNavigatedToTestCasesPageSuccessfully()">
+                <span>Then I verify user is navigated to test cases page successfully</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="24"><span class="badge log pass-bg mr-2">Pass</span>Test Case 8 Verify All Products and product detail page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iLaunchTheBrowser()">
+                <span>Given I launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iNavigateToGivenUrl()">
+                <span>And I navigate to given url</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iVerifyThatHomePageIsVisibleSuccessfully()">
+                <span>And I verify that home page is visible successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iClickOnProductsProductsButton(java.lang.String)">
+                <span>When I click on Products 'Products' button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iVerifyUserIsNavigatedToALLPRODUCTSPageSuccessfully(java.lang.String)">
+                <span>And I verify user is navigated to ALL PRODUCTS "ALL PRODUCTS" page successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iSeeTheProductsListIsVisible()">
+                <span>And I see The products list is visible</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iClickOnViewProductOfFirstProduct(java.lang.String)">
+                <span>And I click on view product of first product "Blue Top"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iUserIsLandedToProductDetailPage()">
+                <span>And I user is landed to product detail page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iVerifyThatProductNameDetailIsVisible(java.lang.String)">
+                <span>Then I verify that product name detail "Blue Top" is visible</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iVerifyThatCategoryDetailIsVisible(java.lang.String)">
+                <span>And I verify that category detail "Category: Women > Tops" is visible</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iVerifyThatPriceDetailIsVisible(java.lang.String)">
+                <span>And I verify that price detail "Rs. 500" is visible</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iVerifyThatAvailabilityDetailIsVisible(java.lang.String)">
+                <span>And I verify that availability detail "Availability: In Stock" is visible</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iVerifyThatConditionDetailIsVisible(java.lang.String)">
+                <span>And I verify that condition detail "Condition: New" is visible</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iVerifyThatBrandDetailIsVisible(java.lang.String)">
+                <span>And I verify that brand detail "Brand: Polo" is visible</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="41"><span class="badge log pass-bg mr-2">Pass</span>Test Case 9 Search Product</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iLaunchTheBrowser()">
+                <span>Given I launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iNavigateToGivenUrl()">
+                <span>And I navigate to given url</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iVerifyThatHomePageIsVisibleSuccessfully()">
+                <span>And I verify that home page is visible successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iClickOnProductsProductsButton(java.lang.String)">
+                <span>When I click on Products 'Products' button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iVerifyUserIsNavigatedToALLPRODUCTSPageSuccessfully(java.lang.String)">
+                <span>And I verify user is navigated to ALL PRODUCTS "ALL PRODUCTS" page successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iEnterProductNameInSearchInputAndClickSearchButton(java.lang.String)">
+                <span>And I Enter product name "jeans" in search input and click search button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iVerifySEARCHEDPRODUCTSIsVisible(java.lang.String)">
+                <span>And I Verify 'SEARCHED PRODUCTS' is visible</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iVerifyAllTheProductsRelatedToSearchAreVisible()">
+                <span>And I Verify all the products related to search are visible</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="52"><span class="badge log pass-bg mr-2">Pass</span>Test Case 10: Verify Subscription in home page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iLaunchTheBrowser()">
+                <span>Given I launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iNavigateToGivenUrl()">
+                <span>And I navigate to given url</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iVerifyThatHomePageIsVisibleSuccessfully()">
+                <span>And I verify that home page is visible successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iScrollDownToFooter()">
+                <span>When I scroll down to footer</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iVerifyTextSUBSCRIPTION(java.lang.String)">
+                <span>And I verify text 'SUBSCRIPTION'</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iEnterEmailAddressInInputAndClickArrowButton(java.lang.String)">
+                <span>And I enter email address "ncstar001@test.com" in input and click arrow button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iVerifySuccessMessageYouHaveBeenSuccessfullySubscribedIsVisible(java.lang.String)">
+                <span>Then I verify success message 'You have been successfully subscribed!' is visible</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="62"><span class="badge log pass-bg mr-2">Pass</span>Test Case 11 Verify Subscription in Cart page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iLaunchTheBrowser()">
+                <span>Given I launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iNavigateToGivenUrl()">
+                <span>And I navigate to given url</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iVerifyThatHomePageIsVisibleSuccessfully()">
+                <span>And I verify that home page is visible successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iClickOnSignupLoginButton(java.lang.String)">
+                <span>When I click on 'Cart' button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iScrollDownToFooter()">
+                <span>And I scroll down to footer</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iVerifyTextSUBSCRIPTION(java.lang.String)">
+                <span>And I verify text 'SUBSCRIPTION'</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iEnterEmailAddressInInputAndClickArrowButton(java.lang.String)">
+                <span>And I enter email address "ncstar001@test.com" in input and click arrow button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iVerifySuccessMessageYouHaveBeenSuccessfullySubscribedIsVisible(java.lang.String)">
+                <span>And I verify success message 'You have been successfully subscribed!' is visible</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="73"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Cases 12, 13, 14, 15 and 16</p>
+            <p class="text-sm">
+              <span>11:15:35 PM</span> / <span>00:01:50:759</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Test Cases 12, 13, 14, 15 and 16</h5>
+<span class='badge badge-success'>01.01.2024 11:15:35 PM</span>
+<span class='badge badge-danger'>01.01.2024 11:17:26 PM</span>
+<span class='badge badge-default'>00:01:50:759</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=73</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As an User, I want to check
+Test Case 12: Add Products in Cart
+Test Case 13: Verify Product quantity in Cart
+Test Case 14: Place Order: Register while Checkout
+Test Case 15: Place Order: Register before Checkout
+Test Case 16: Place Order: Login before Checkout</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="74"><span class="badge log fail-bg mr-2">Fail</span>Test Case 12 Add Products in Cart</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iLaunchTheBrowser()">
+                <span>Given I launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iNavigateToGivenUrl()">
+                <span>And I navigate to given url</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iVerifyThatHomePageIsVisibleSuccessfully()">
+                <span>And I verify that home page is visible successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iClickOnProductsProductsButton(java.lang.String)">
+                <span>When I click on Products 'Products' button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test12To16Steps.iHoverOverAndClickAddToCart(java.lang.String)">
+                <span>And I hover over "Blue Top" and click Add to cart</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.automation.exercise.steps.Test12To16Steps.iClickContinueShoppingButton()">
+                <span>And I click Continue Shopping button</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=120.0.6099.130)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [029ba74d9d8ea93b6e54976f901a8bbf, clickElement {id=26922B2718706C2E36F778903E8FB768_element_75}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\imsky\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62606}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62606/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (029ba74d9d8ea93b6e54976f901a8bbf)] -> xpath: //button[normalize-space()='Continue Shopping']]
+Session ID: 029ba74d9d8ea93b6e54976f901a8bbf
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.click(Unknown Source)
+	at com.automation.exercise.pages.ProductsPage.clickContinueShoppingButton(ProductsPage.java:202)
+	at com.automation.exercise.steps.Test12To16Steps.iClickContinueShoppingButton(Test12To16Steps.java:19)
+	at ✽.I click Continue Shopping button(file:///C:/Users/imsky/IdeaProjects/automation-exercise-com/src/test/resources/features/test12to16.feature:21)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test12To16Steps.iHoverOverAndClickAddToCart(java.lang.String)">
+                <span>And I hover over "Men Tshirt" and click Add to cart</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test12To16Steps.iClickViewCartButton()">
+                <span>And I click View Cart button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.automation.exercise.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>Test Case 12 Add Products in Cart
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded1.jpg' src="../screenshots/embedded1.jpg">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="85"><span class="badge log pass-bg mr-2">Pass</span>Test Case 13 Verify Product quantity in Cart</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iLaunchTheBrowser()">
+                <span>Given I launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iNavigateToGivenUrl()">
+                <span>And I navigate to given url</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iVerifyThatHomePageIsVisibleSuccessfully()">
+                <span>And I verify that home page is visible successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test12To16Steps.iClickOnForAnyProductOnHomePage(java.lang.String)">
+                <span>When I click on "Fancy Green Top" for any product on home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iVerifyThatProductNameDetailIsVisible(java.lang.String)">
+                <span>And I verify that product name detail "Fancy Green Top" is visible</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iVerifyThatCategoryDetailIsVisible(java.lang.String)">
+                <span>And I verify that category detail "Category: Women > Tops" is visible</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iVerifyThatPriceDetailIsVisible(java.lang.String)">
+                <span>And I verify that price detail "Rs. 700" is visible</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iVerifyThatAvailabilityDetailIsVisible(java.lang.String)">
+                <span>And I verify that availability detail "Availability: In Stock" is visible</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iVerifyThatConditionDetailIsVisible(java.lang.String)">
+                <span>And I verify that condition detail "Condition: New" is visible</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iVerifyThatBrandDetailIsVisible(java.lang.String)">
+                <span>And I verify that brand detail "Brand: Polo" is visible</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test12To16Steps.iIncreaseQuantityToFour(java.lang.String)">
+                <span>And I increase quantity to four "4"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test12To16Steps.iClickToAddToCartButton(java.lang.String)">
+                <span>And I click to 'Add to cart' button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test12To16Steps.iClickViewCartButton()">
+                <span>Then I click View Cart button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test12To16Steps.iVerifyThatProductIsDisplayedInCartPageWithExactQuantity(java.lang.String)">
+                <span>And I verify that product is displayed in cart page with exact quantity "4"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="102"><span class="badge log fail-bg mr-2">Fail</span>Test Case 14 Place Order Register while Checkout</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iLaunchTheBrowser()">
+                <span>Given I launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iNavigateToGivenUrl()">
+                <span>And I navigate to given url</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iVerifyThatHomePageIsVisibleSuccessfully()">
+                <span>And I verify that home page is visible successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test12To16Steps.iClickOnForAnyProductOnHomePage(java.lang.String)">
+                <span>When I click on "Fancy Green Top" for any product on home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test12To16Steps.iClickToAddToCartButton(java.lang.String)">
+                <span>And I click to 'Add to cart' button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iVerifyThatProductNameDetailIsVisible(java.lang.String)">
+                <span>And I verify that product name detail "Fancy Green Top" is visible</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test22To26Steps.iVerifyThatCartPageIsDisplayed()">
+                <span>And I verify that cart page is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.automation.exercise.steps.Test22To26Steps.iClickProceedToCheckout()">
+                <span>And I click Proceed To Checkout</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[normalize-space()='Proceed To Checkout']"}
+  (Session info: chrome=120.0.6099.130)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8290573a3ba6e09dc991e64900696804, findElement {using=xpath, value=//a[normalize-space()='Proceed To Checkout']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\imsky\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62692}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62692/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8290573a3ba6e09dc991e64900696804
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.click(Unknown Source)
+	at com.automation.exercise.pages.ViewCartPage.clickOnProceedToCheckout(ViewCartPage.java:68)
+	at com.automation.exercise.steps.Test22To26Steps.iClickProceedToCheckout(Test22To26Steps.java:89)
+	at ✽.I click Proceed To Checkout(file:///C:/Users/imsky/IdeaProjects/automation-exercise-com/src/test/resources/features/test12to16.feature:47)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test1To5Steps.iClickOnSignupLoginButton(java.lang.String)">
+                <span>When I click on 'Signup / Login' button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test1To5Steps.iEnterNameAndEmailAddress(java.lang.String,java.lang.String)">
+                <span>And I enter name "Neil" and email "ncstaraag@test.com" address</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test1To5Steps.iClickSignupButton(java.lang.String)">
+                <span>And I click 'Signup' button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test1To5Steps.iFillDetailsTitlePasswordDOBDayDOBMonthDOBYear(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">
+                <span>And I fill details: Title "Mr" Password "Pen2paper" DOBDay "5" DOBMonth "August" DOBYear "2003"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test1To5Steps.iSelectCheckboxSignUpForOurNewsletter()">
+                <span>And I select checkbox Sign up for our newsletter!</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test1To5Steps.iSelectCheckboxReceiveSpecialOffersFromOurPartners()">
+                <span>And I select checkbox Receive special offers from our partners!</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test1To5Steps.iFillDetailsFirstNameLastNameCompanyAddressAddressLineCountryStateCityZipcodeMobileNumber(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">
+                <span>And I fill details: First name "Neil" Last name "Cooper" Company "Cooper & Co" Address "Barr Road" AddressLine "Bath" Country "India" State "Bihar" City "Patna" Zipcode "117 657" Mobile Number "099887 766554"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test1To5Steps.iClickCreateAccountButton(java.lang.String)">
+                <span>And I click 'Create Account button'</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test1To5Steps.iVerifyThatACCOUNTCREATEDPageIsVisible(java.lang.String)">
+                <span>And I verify that 'ACCOUNT CREATED!' page is visible</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test1To5Steps.iClickContinueButton()">
+                <span>And I click Continue button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test1To5Steps.iSeeThatLoggedInAsUsernameIsVisible(java.lang.String)">
+                <span>And I see that 'Logged in as Neil' is visible</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test1To5Steps.iClickOnSignupLoginButton(java.lang.String)">
+                <span>And I click on 'Cart' button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test22To26Steps.iClickProceedToCheckout()">
+                <span>And I click Proceed To Checkout</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test22To26Steps.iVerifyAddressDetailsAndReviewYourOrder()">
+                <span>And I Verify Address Details and Review Your Order</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test22To26Steps.iEnterDescriptionInCommentTextAreaAndClickPlaceOrder(java.lang.String)">
+                <span>And I enter description in comment text area and click 'Place Order'</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test22To26Steps.iEnterPaymentDetailsNameOnCardCardNumberCVCExpirationMonthAndYear(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">
+                <span>And I enter payment details Name on Card "Neil Cooper" Card Number "4545 6767 3434 1212"  CVC "342" Expiration Month "09" and Year "2027"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test22To26Steps.iClickPayAndConfirmOrderButton()">
+                <span>And I click Pay and Confirm Order button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test22To26Steps.iVerifyTheSuccessMessageYourOrderHasBeenPlacedSuccessfully(java.lang.String)">
+                <span>And I verify the success message 'Your order has been placed successfully!'</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test1To5Steps.iClickTheDeleteAccountButton(java.lang.String)">
+                <span>Then I click the 'Delete Account' button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test1To5Steps.iVerifyThatACCOUNTDELETEDIsVisibleAndClickContinueButton(java.lang.String)">
+                <span>And I verify that 'ACCOUNT DELETED!' is visible and click Continue button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.automation.exercise.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>Test Case 14 Place Order Register while Checkout
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded2.jpg' src="../screenshots/embedded2.jpg">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="133"><span class="badge log fail-bg mr-2">Fail</span>Test Case 15: Place Order: Register before Checkout</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iLaunchTheBrowser()">
+                <span>Given I launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iNavigateToGivenUrl()">
+                <span>And I navigate to given url</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iVerifyThatHomePageIsVisibleSuccessfully()">
+                <span>And I verify that home page is visible successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iClickOnSignupLoginButton(java.lang.String)">
+                <span>When I click on 'Signup / Login' button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iEnterNameAndEmailAddress(java.lang.String,java.lang.String)">
+                <span>And I enter name "Neil" and email "ncstaraag@test.com" address</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iClickSignupButton(java.lang.String)">
+                <span>And I click 'Signup' button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.automation.exercise.steps.Test1To5Steps.iFillDetailsTitlePasswordDOBDayDOBMonthDOBYear(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">
+                <span>And I fill details: Title "Mr" Password "Pen2paper" DOBDay "5" DOBMonth "August" DOBYear "2003"</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#id_gender1"}
+  (Session info: chrome=120.0.6099.130)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e097d24ed5a99ee075854c868e4ad41d, findElement {using=id, value=id_gender1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\imsky\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62734}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62734/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e097d24ed5a99ee075854c868e4ad41d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.click(Unknown Source)
+	at com.automation.exercise.utility.Utility.clickOnElement(Utility.java:46)
+	at com.automation.exercise.pages.SignUpPage.selectTitle(SignUpPage.java:119)
+	at com.automation.exercise.steps.Test1To5Steps.iFillDetailsTitlePasswordDOBDayDOBMonthDOBYear(Test1To5Steps.java:81)
+	at ✽.I fill details: Title "Mr" Password "Pen2paper" DOBDay "5" DOBMonth "August" DOBYear "2003"(file:///C:/Users/imsky/IdeaProjects/automation-exercise-com/src/test/resources/features/test12to16.feature:74)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test1To5Steps.iSelectCheckboxSignUpForOurNewsletter()">
+                <span>And I select checkbox Sign up for our newsletter!</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test1To5Steps.iSelectCheckboxReceiveSpecialOffersFromOurPartners()">
+                <span>And I select checkbox Receive special offers from our partners!</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test1To5Steps.iFillDetailsFirstNameLastNameCompanyAddressAddressLineCountryStateCityZipcodeMobileNumber(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">
+                <span>And I fill details: First name "Neil" Last name "Cooper" Company "Cooper & Co" Address "Barr Road" AddressLine "Bath" Country "India" State "Bihar" City "Patna" Zipcode "117 657" Mobile Number "099887 766554"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test1To5Steps.iClickCreateAccountButton(java.lang.String)">
+                <span>And I click 'Create Account button'</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test1To5Steps.iVerifyThatACCOUNTCREATEDPageIsVisible(java.lang.String)">
+                <span>And I verify that 'ACCOUNT CREATED!' page is visible</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test1To5Steps.iClickContinueButton()">
+                <span>And I click Continue button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test1To5Steps.iSeeThatLoggedInAsUsernameIsVisible(java.lang.String)">
+                <span>And I see that 'Logged in as Neil' is visible</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test12To16Steps.iClickOnForAnyProductOnHomePage(java.lang.String)">
+                <span>And I click on "Fancy Green Top" for any product on home page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test12To16Steps.iClickToAddToCartButton(java.lang.String)">
+                <span>And I click to 'Add to cart' button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test6To11Steps.iVerifyThatProductNameDetailIsVisible(java.lang.String)">
+                <span>And I verify that product name detail "Fancy Green Top" is visible</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test22To26Steps.iClickProceedToCheckout()">
+                <span>And I click Proceed To Checkout</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test22To26Steps.iVerifyAddressDetailsAndReviewYourOrder()">
+                <span>And I Verify Address Details and Review Your Order</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test22To26Steps.iEnterDescriptionInCommentTextAreaAndClickPlaceOrder(java.lang.String)">
+                <span>And I enter description in comment text area and click 'Place Order'</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test22To26Steps.iEnterPaymentDetailsNameOnCardCardNumberCVCExpirationMonthAndYear(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">
+                <span>And I enter payment details Name on Card "Neil Cooper" Card Number "4545 6767 3434 1212"  CVC "342" Expiration Month "09" and Year "2027"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test22To26Steps.iClickPayAndConfirmOrderButton()">
+                <span>And I click Pay and Confirm Order button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test22To26Steps.iVerifyTheSuccessMessageYourOrderHasBeenPlacedSuccessfully(java.lang.String)">
+                <span>And I verify the success message 'Your order has been placed successfully!'</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test1To5Steps.iClickTheDeleteAccountButton(java.lang.String)">
+                <span>Then I click the 'Delete Account' button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test1To5Steps.iVerifyThatACCOUNTDELETEDIsVisibleAndClickContinueButton(java.lang.String)">
+                <span>And I verify that 'ACCOUNT DELETED!' is visible and click Continue button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.automation.exercise.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>Test Case 15: Place Order: Register before Checkout
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded3.jpg' src="../screenshots/embedded3.jpg">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="161"><span class="badge log fail-bg mr-2">Fail</span>Test Case 16: Place Order: Login before Checkout</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iLaunchTheBrowser()">
+                <span>Given I launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iNavigateToGivenUrl()">
+                <span>And I navigate to given url</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iVerifyThatHomePageIsVisibleSuccessfully()">
+                <span>And I verify that home page is visible successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.automation.exercise.steps.Test1To5Steps.iClickSignupButton(java.lang.String)">
+                <span>When I click 'Signup / Login' button</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[normalize-space()='Signup']"}
+  (Session info: chrome=120.0.6099.130)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0e75763cf6196c05a05ac081cc9f8a87, findElement {using=xpath, value=//button[normalize-space()='Signup']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\imsky\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62796}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62796/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0e75763cf6196c05a05ac081cc9f8a87
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at com.automation.exercise.pages.LoginPage.clickOnSignUp(LoginPage.java:80)
+	at com.automation.exercise.steps.Test1To5Steps.iClickSignupButton(Test1To5Steps.java:71)
+	at ✽.I click 'Signup / Login' button(file:///C:/Users/imsky/IdeaProjects/automation-exercise-com/src/test/resources/features/test12to16.feature:96)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test1To5Steps.iEnterCorrectEmailAddressAndPassword(java.lang.String,java.lang.String)">
+                <span>And I enter correct email address "ncstar000@test.com" and password "Pen2paper"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test1To5Steps.iClickLoginLoginButton(java.lang.String)">
+                <span>And I click Login 'login' button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test1To5Steps.iSeeThatLoggedInAsUsernameIsVisible(java.lang.String)">
+                <span>And I see that 'Logged in as Neil' is visible</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test12To16Steps.iClickOnForAnyProductOnHomePage(java.lang.String)">
+                <span>And I click on "Fancy Green Top" for any product on home page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test12To16Steps.iClickToAddToCartButton(java.lang.String)">
+                <span>And I click to 'Add to cart' button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test6To11Steps.iVerifyThatProductNameDetailIsVisible(java.lang.String)">
+                <span>And I verify that product name detail "Fancy Green Top" is visible</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test22To26Steps.iClickProceedToCheckout()">
+                <span>And I click Proceed To Checkout</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test22To26Steps.iVerifyAddressDetailsAndReviewYourOrder()">
+                <span>And I Verify Address Details and Review Your Order</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test22To26Steps.iEnterDescriptionInCommentTextAreaAndClickPlaceOrder(java.lang.String)">
+                <span>And I enter description in comment text area and click 'Place Order'</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test22To26Steps.iEnterPaymentDetailsNameOnCardCardNumberCVCExpirationMonthAndYear(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">
+                <span>And I enter payment details Name on Card "Neil Cooper" Card Number "4545 6767 3434 1212"  CVC "342" Expiration Month "09" and Year "2027"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test22To26Steps.iClickPayAndConfirmOrderButton()">
+                <span>And I click Pay and Confirm Order button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test22To26Steps.iVerifyTheSuccessMessageYourOrderHasBeenPlacedSuccessfully(java.lang.String)">
+                <span>And I verify the success message 'Your order has been placed successfully!'</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test1To5Steps.iClickTheDeleteAccountButton(java.lang.String)">
+                <span>Then I click the 'Delete Account' button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test1To5Steps.iVerifyThatACCOUNTDELETEDIsVisibleAndClickContinueButton(java.lang.String)">
+                <span>And I verify that 'ACCOUNT DELETED!' is visible and click Continue button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.automation.exercise.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>Test Case 16: Place Order: Login before Checkout
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded4.jpg' src="../screenshots/embedded4.jpg">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="182"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Test 17, Test 18, Test 19, Test 20 and Test 21</p>
+            <p class="text-sm">
+              <span>11:17:26 PM</span> / <span>00:02:02:822</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Test 17, Test 18, Test 19, Test 20 and Test 21</h5>
+<span class='badge badge-success'>01.01.2024 11:17:26 PM</span>
+<span class='badge badge-danger'>01.01.2024 11:19:28 PM</span>
+<span class='badge badge-default'>00:02:02:822</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=182</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As an User, I want to check
+Test Case 17 Remove Products From Cart
+Test Case 18 View Category Products
+Test Case 19 View & Cart Brand Products
+Test Case 20 Search Products and Verify Cart After Login
+Test Case 21 Add review on product</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="183"><span class="badge log fail-bg mr-2">Fail</span>Test Case 17 Remove Products From Cart</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iLaunchTheBrowser()">
+                <span>Given I launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iNavigateToGivenUrl()">
+                <span>And I navigate to given url</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iVerifyThatHomePageIsVisibleSuccessfully()">
+                <span>And I verify that home page is visible successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test17To21Steps.iMouseHoverOnProductAndAddToCart(java.lang.String)">
+                <span>When I mouse hover on product "Cotton Silk Hand Block Print Saree" and Add to cart</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test22To26Steps.iClickOnContinueShopping()">
+                <span>And I click on Continue Shopping</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test17To21Steps.iMouseHoverOnProductAndAddToCart(java.lang.String)">
+                <span>And I mouse hover on product "Beautiful Peacock Blue Cotton Linen Saree" and Add to cart</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test22To26Steps.iClickOnContinueShopping()">
+                <span>And I click on Continue Shopping</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test17To21Steps.iMouseHoverOnProductAndAddToCart(java.lang.String)">
+                <span>And I mouse hover on product "Rust Red Linen Saree" and Add to cart</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test12To16Steps.iClickViewCartButton()">
+                <span>And I click View Cart button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test22To26Steps.iVerifyThatCartPageIsDisplayed()">
+                <span>And I verify that cart page is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test17To21Steps.iClickXButtonCorrespondingToParticularProduct(java.lang.String)">
+                <span>And I click X button corresponding to particular product "Cotton Silk Hand Block Print Saree"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test17To21Steps.iClickXButtonCorrespondingToParticularProduct(java.lang.String)">
+                <span>And I click X button corresponding to particular product "Beautiful Peacock Blue Cotton Linen Saree"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test17To21Steps.iClickXButtonCorrespondingToParticularProduct(java.lang.String)">
+                <span>And I click X button corresponding to particular product "Rust Red Linen Saree"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.automation.exercise.steps.Test17To21Steps.iVerifyThatProductIsRemovedFromTheCart()">
+                <span>Then I verify that product is removed from the cart</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: Cart is empty!-Error expected [Cart is empty!] but found []
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at com.automation.exercise.steps.Test17To21Steps.iVerifyThatProductIsRemovedFromTheCart(Test17To21Steps.java:29)
+	at ✽.I verify that product is removed from the cart(file:///C:/Users/imsky/IdeaProjects/automation-exercise-com/src/test/resources/features/test17to21.feature:30)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.automation.exercise.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>Test Case 17 Remove Products From Cart
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded5.jpg' src="../screenshots/embedded5.jpg">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="200"><span class="badge log pass-bg mr-2">Pass</span>Test Case 18 View Category Products</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iLaunchTheBrowser()">
+                <span>Given I launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iNavigateToGivenUrl()">
+                <span>And I navigate to given url</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iVerifyThatHomePageIsVisibleSuccessfully()">
+                <span>And I verify that home page is visible successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test17To21Steps.iVerifyThatCategoriesAreVisibleOnLeftSideBar()">
+                <span>When I verify that categories are visible on left side bar</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test17To21Steps.iClickOnCategory(java.lang.String)">
+                <span>And I click on "Women" category</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test17To21Steps.iClickOnSubCategoryOfAboveCategory(java.lang.String)">
+                <span>And I click on sub category of above category "Dress"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test17To21Steps.iVerifySubCategoryPageIsDisplayedAndConfirmText(java.lang.String)">
+                <span>And I verify sub category page is displayed and confirm text "WOMEN - DRESS PRODUCTS"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test17To21Steps.iClickOnCategory(java.lang.String)">
+                <span>And I click on "Men" category</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test17To21Steps.iClickOnSubCategoryOfMenCategory(java.lang.String)">
+                <span>And I click on sub-category of Men category "Jeans"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test17To21Steps.iVerifyThatUserIsNavigatedToCategoryPage(java.lang.String)">
+                <span>And I verify that user is navigated to "MEN - JEANS PRODUCTS" category page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="213"><span class="badge log fail-bg mr-2">Fail</span>Test Case 19 View & Cart Brand Products</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iLaunchTheBrowser()">
+                <span>Given I launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iNavigateToGivenUrl()">
+                <span>And I navigate to given url</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iVerifyThatHomePageIsVisibleSuccessfully()">
+                <span>And I verify that home page is visible successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iClickOnProductsProductsButton(java.lang.String)">
+                <span>When I click on Products 'Products' button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test17To21Steps.iVerifyThatBrandsAreVisibleOnLeftSideBar()">
+                <span>And I verify that Brands are visible on left side bar</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test17To21Steps.iClickOnBrandName(java.lang.String)">
+                <span>And I click on "Babyhug" brand name</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.automation.exercise.steps.Test17To21Steps.iVerifyThatUserIsNavigatedToBrandPage(java.lang.String)">
+                <span>And I verify that user is navigated to brand page "TEXT"</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h2[normalize-space()='Brand - Babyhug Products']"}
+  (Session info: chrome=120.0.6099.130)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [08e57deb56c8fbb0a6cf52239f02112b, findElement {using=xpath, value=//h2[normalize-space()='Brand - Babyhug Products']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\imsky\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62919}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62919/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 08e57deb56c8fbb0a6cf52239f02112b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.getText(Unknown Source)
+	at com.automation.exercise.utility.Utility.getTextFromElement(Utility.java:55)
+	at com.automation.exercise.pages.HomePage.verifyThatUserIsNavigatedToBrandPage(HomePage.java:482)
+	at com.automation.exercise.steps.Test17To21Steps.iVerifyThatUserIsNavigatedToBrandPage(Test17To21Steps.java:82)
+	at ✽.I verify that user is navigated to brand page "TEXT"(file:///C:/Users/imsky/IdeaProjects/automation-exercise-com/src/test/resources/features/test17to21.feature:49)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test17To21Steps.iClickOnBrandName(java.lang.String)">
+                <span>And I click on "Madame" brand name</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test17To21Steps.iVerifyThatUserIsNavigatedToThatBrandPage(java.lang.String)">
+                <span>And I verify that user is navigated to that brand page "TEXT1"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.automation.exercise.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>Test Case 19 View & Cart Brand Products
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded6.jpg' src="../screenshots/embedded6.jpg">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="225"><span class="badge log fail-bg mr-2">Fail</span>Test Case 20 Search Products and Verify Cart After Login</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iLaunchTheBrowser()">
+                <span>Given I launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iNavigateToGivenUrl()">
+                <span>And I navigate to given url</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iVerifyThatHomePageIsVisibleSuccessfully()">
+                <span>And I verify that home page is visible successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iClickOnProductsProductsButton(java.lang.String)">
+                <span>When I click on Products 'Products' button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test17To21Steps.iVerifyUserIsNavigatedToAllProductsPageSuccessfully(java.lang.String)">
+                <span>And I verify user is navigated to All Products "ALL PRODUCTS" page successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test17To21Steps.iEnterInSearchInputAndClick(java.lang.String)">
+                <span>And I enter "Cotton Mull Embroidered Dress" in search input and click</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test17To21Steps.iVerifySEARCHEDPRODUCTSIsVisible(java.lang.String)">
+                <span>And I verify SEARCHED PRODUCTS "SEARCHED PRODUCTS" is visible</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test17To21Steps.iAddToCart(java.lang.String)">
+                <span>And I add "Cotton Mull Embroidered Dress products" to cart</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.automation.exercise.steps.Test22To26Steps.iClickOnViewCartButton()">
+                <span>And I click on View Cart button</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='item active']//div[3]//div[1]//div[1]//div[1]//a[1]"}
+  (Session info: chrome=120.0.6099.130)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [79b9bba86d5d71b7ca6c092f701fa259, findElement {using=xpath, value=//div[@class='item active']//div[3]//div[1]//div[1]//div[1]//a[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\imsky\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63010}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63010/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 79b9bba86d5d71b7ca6c092f701fa259
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at com.automation.exercise.pages.HomePage.clickOnViewCartButton(HomePage.java:452)
+	at com.automation.exercise.steps.Test22To26Steps.iClickOnViewCartButton(Test22To26Steps.java:18)
+	at ✽.I click on View Cart button(file:///C:/Users/imsky/IdeaProjects/automation-exercise-com/src/test/resources/features/test17to21.feature:62)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test1To5Steps.iClickOnSignupLoginButton(java.lang.String)">
+                <span>And I click on 'Signup / Login' button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test1To5Steps.iEnterCorrectEmailAddressAndPassword(java.lang.String,java.lang.String)">
+                <span>And I enter correct email address "ncstar000@test.com" and password "Pen2paper"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test1To5Steps.iClickLoginLoginButton(java.lang.String)">
+                <span>And I click Login 'login' button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test1To5Steps.iSeeThatLoggedInAsUsernameIsVisible(java.lang.String)">
+                <span>And I see that 'Logged in as Neil' is visible</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test1To5Steps.iClickOnSignupLoginButton(java.lang.String)">
+                <span>And I click on 'Cart' button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.automation.exercise.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>Test Case 20 Search Products and Verify Cart After Login
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded7.jpg' src="../screenshots/embedded7.jpg">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="242"><span class="badge log pass-bg mr-2">Pass</span>Test Case 21 Add review on product</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iLaunchTheBrowser()">
+                <span>Given I launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iNavigateToGivenUrl()">
+                <span>And I navigate to given url</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iVerifyThatHomePageIsVisibleSuccessfully()">
+                <span>And I verify that home page is visible successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iClickOnProductsProductsButton(java.lang.String)">
+                <span>When I click on Products 'Products' button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iVerifyUserIsNavigatedToALLPRODUCTSPageSuccessfully(java.lang.String)">
+                <span>And I verify user is navigated to ALL PRODUCTS "ALL PRODUCTS" page successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test17To21Steps.iClickOnViewProductViewProductButton(java.lang.String)">
+                <span>And I click on View Product 'View Product' button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test17To21Steps.iVerifyWriteYourReviewWRITEYOURREVIEWIsVisible(java.lang.String)">
+                <span>And I verify Write Your Review 'WRITE YOUR REVIEW' is visible</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test17To21Steps.iEnterNameEmailAndReview(java.lang.String,java.lang.String,java.lang.String)">
+                <span>And I enter name "Neil"  email "ncstar001@test.com" and review "Good Product"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test17To21Steps.iClickOnReviewSubmitButton()">
+                <span>Then I click on Review Submit button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test17To21Steps.iVerifySuccessMessageThankYouForYourReview(java.lang.String)">
+                <span>And I verify success message 'Thank you for your review.'</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="255"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Cases 1, 2, 3, 4, and 5</p>
+            <p class="text-sm">
+              <span>11:19:28 PM</span> / <span>00:00:43:332</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test Cases 1, 2, 3, 4, and 5</h5>
+<span class='badge badge-success'>01.01.2024 11:19:28 PM</span>
+<span class='badge badge-danger'>01.01.2024 11:20:12 PM</span>
+<span class='badge badge-default'>00:00:43:332</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=255</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As an User I want to check
+Test Case 1 Register User
+Test Case 2 Login User with correct email and password
+Test Case 3 Login User with incorrect email and password
+Test Case 4 Logout User
+Test Case 5 Register User with existing email</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="256"><span class="badge log pass-bg mr-2">Pass</span>Test Case 1 Register User</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iLaunchTheBrowser()">
+                <span>Given I launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iNavigateToGivenUrl()">
+                <span>And I navigate to given url</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iVerifyThatHomePageIsVisibleSuccessfully()">
+                <span>And I verify that home page is visible successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iClickOnSignupLoginButton(java.lang.String)">
+                <span>And I click on 'Signup / Login' button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iVerifyNewUserSignupIsVisible(java.lang.String)">
+                <span>When I verify 'New User Signup!' is visible</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iEnterNameAndEmailAddress(java.lang.String,java.lang.String)">
+                <span>And I enter name "Neil" and email "ncstaraan@test.com" address</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iClickSignupButton(java.lang.String)">
+                <span>And I click 'Signup' button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iVerifyThatENTERACCOUNTINFORMATIONIsVisible(java.lang.String)">
+                <span>And I verify that 'ENTER ACCOUNT INFORMATION' is visible</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iFillDetailsTitlePasswordDOBDayDOBMonthDOBYear(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">
+                <span>And I fill details: Title "Mr" Password "Pen2paper" DOBDay "5" DOBMonth "August" DOBYear "2003"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iSelectCheckboxSignUpForOurNewsletter()">
+                <span>And I select checkbox Sign up for our newsletter!</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iSelectCheckboxReceiveSpecialOffersFromOurPartners()">
+                <span>And I select checkbox Receive special offers from our partners!</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iFillDetailsFirstNameLastNameCompanyAddressAddressLineCountryStateCityZipcodeMobileNumber(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">
+                <span>And I fill details: First name "Neil" Last name "Cooper" Company "Cooper & Co" Address "Barr Road" AddressLine "Bath" Country "India" State "Bihar" City "Patna" Zipcode "117 657" Mobile Number "099887 766554"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iClickCreateAccountButton(java.lang.String)">
+                <span>And I click 'Create Account button'</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iVerifyThatACCOUNTCREATEDPageIsVisible(java.lang.String)">
+                <span>And I verify that 'ACCOUNT CREATED!' page is visible</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iClickContinueButton()">
+                <span>And I click Continue button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iSeeThatLoggedInAsUsernameIsVisible(java.lang.String)">
+                <span>And I see that 'Logged in as Neil' is visible</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iClickTheDeleteAccountButton(java.lang.String)">
+                <span>Then I click the 'Delete Account' button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iVerifyThatACCOUNTDELETEDIsVisibleAndClickContinueButton(java.lang.String)">
+                <span>And I verify that 'ACCOUNT DELETED!' is visible and click Continue button</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="277"><span class="badge log pass-bg mr-2">Pass</span>Test Case 2: Login User with correct email and password</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iLaunchTheBrowser()">
+                <span>Given I launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iNavigateToGivenUrl()">
+                <span>And I navigate to given url</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iVerifyThatHomePageIsVisibleSuccessfully()">
+                <span>And I verify that home page is visible successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iClickOnSignupLoginButton(java.lang.String)">
+                <span>And I click on 'Signup / Login' button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iVerifyLoginToYourAccountLoginToYourAccountIsVisible(java.lang.String)">
+                <span>When I verify Login to your account 'Login to your account' is visible</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iEnterCorrectEmailAddressAndPassword(java.lang.String,java.lang.String)">
+                <span>And I enter correct email address "ncstar000@test.com" and password "Pen2paper"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iClickLoginLoginButton(java.lang.String)">
+                <span>And I click Login 'login' button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iSeeThatLoggedInAsUsernameIsVisible(java.lang.String)">
+                <span>And I see that 'Logged in as Neil' is visible</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="288"><span class="badge log pass-bg mr-2">Pass</span>Test Case 3: Login User with incorrect email and password</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iLaunchTheBrowser()">
+                <span>Given I launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iNavigateToGivenUrl()">
+                <span>And I navigate to given url</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iVerifyThatHomePageIsVisibleSuccessfully()">
+                <span>And I verify that home page is visible successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iClickOnSignupLoginButton(java.lang.String)">
+                <span>And I click on 'Signup / Login' button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iVerifyLoginToYourAccountLoginToYourAccountIsVisible(java.lang.String)">
+                <span>When I verify Login to your account 'Login to your account' is visible</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iEnterIncorrectEmailAddressAndPassword(java.lang.String,java.lang.String)">
+                <span>And I enter incorrect email address "ncooper@test.com" and password "Pen2paper"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iClickLoginLoginButton(java.lang.String)">
+                <span>And I click Login 'login' button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.verifyErrorYourEmailOrPasswordIsIncorrectIsVisible(java.lang.String)">
+                <span>Then Verify error 'Your email or password is incorrect!' is visible</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="299"><span class="badge log pass-bg mr-2">Pass</span>Test Case 4: Logout User</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iLaunchTheBrowser()">
+                <span>Given I launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iNavigateToGivenUrl()">
+                <span>And I navigate to given url</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iVerifyThatHomePageIsVisibleSuccessfully()">
+                <span>And I verify that home page is visible successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iClickOnSignupLoginButton(java.lang.String)">
+                <span>And I click on 'Signup / Login' button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iVerifyLoginToYourAccountLoginToYourAccountIsVisible(java.lang.String)">
+                <span>And I verify Login to your account 'Login to your account' is visible</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iEnterCorrectEmailAddressAndPassword(java.lang.String,java.lang.String)">
+                <span>And I enter correct email address "ncstar000@test.com" and password "Pen2paper"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iClickLoginLoginButton(java.lang.String)">
+                <span>And I click Login 'login' button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iSeeThatLoggedInAsUsernameIsVisible(java.lang.String)">
+                <span>And I see that 'Logged in as Neil' is visible</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iClickOnSignupLoginButton(java.lang.String)">
+                <span>Then I click on 'Logout' button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iVerifyThatUserIsNavigatedToLoginPage()">
+                <span>And I verify that user is navigated to login page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="312"><span class="badge log pass-bg mr-2">Pass</span>Test Case 5: Register User with existing email</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iLaunchTheBrowser()">
+                <span>Given I launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iNavigateToGivenUrl()">
+                <span>And I navigate to given url</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iVerifyThatHomePageIsVisibleSuccessfully()">
+                <span>And I verify that home page is visible successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iClickOnSignupLoginButton(java.lang.String)">
+                <span>And I click on 'Signup / Login' button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iVerifyNewUserSignupIsVisible(java.lang.String)">
+                <span>When I verify 'New User Signup!' is visible</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iEnterNameAndEmailAddress(java.lang.String,java.lang.String)">
+                <span>And I enter name "Neil" and email "ncstar000@test.com" address</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iClickSignupButton(java.lang.String)">
+                <span>And I click 'Signup' button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.verifyErrorEmailAddressAlreadyExistEmailAddressAlreadyExistIsVisible(java.lang.String)">
+                <span>Then Verify error Email Address already exist! 'Email Address already exist!' is visible</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="323"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Cases 22, 23, 24, 25 and 26</p>
+            <p class="text-sm">
+              <span>11:20:12 PM</span> / <span>00:02:03:888</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Test Cases 22, 23, 24, 25 and 26</h5>
+<span class='badge badge-success'>01.01.2024 11:20:12 PM</span>
+<span class='badge badge-danger'>01.01.2024 11:22:16 PM</span>
+<span class='badge badge-default'>00:02:03:888</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=323</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As a User I want to check
+Test Case 22 Add to cart from Recommended items
+Test Case 23 Verify address details in checkout page
+Test Case 24 Download Invoice after purchase order
+Test Case 25 Verify Scroll Up using 'Arrow' button and Scroll Down functionality
+Test Case 26 Verify Scroll Up without 'Arrow' button and Scroll Down functionality</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="324"><span class="badge log fail-bg mr-2">Fail</span>Test Case 22 Add to cart from Recommended items</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iLaunchTheBrowser()">
+                <span>Given I launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iNavigateToGivenUrl()">
+                <span>And I navigate to given url</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iVerifyThatHomePageIsVisibleSuccessfully()">
+                <span>And I verify that home page is visible successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test22To26Steps.iScrollToBottomOfPage()">
+                <span>When I scroll to bottom of page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test22To26Steps.iVerifyRECOMMENDEDITEMSAreVisible(java.lang.String)">
+                <span>And I verify 'RECOMMENDED ITEMS' are visible</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test22To26Steps.iAddToCartBlueTopFromRecommendedItems(java.lang.String)">
+                <span>And I Add to cart 'Blue Top' from Recommended Items</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.automation.exercise.steps.Test22To26Steps.iClickOnViewCartButton()">
+                <span>Then I click on View Cart button</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.JavascriptException: javascript error: argument is not defined
+  (Session info: chrome=120.0.6099.130)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1ed3c23b5e875609dff778087306f7c2, executeScript {script=argument[0].click;, args=[{element-6066-11e4-a52e-4f735466cecf=58DD7F3C014A969ED83B270B2CD9333C_element_43}]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\imsky\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63304}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63304/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1ed3c23b5e875609dff778087306f7c2
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:468)
+	at com.automation.exercise.pages.HomePage.clickOnViewCartButton(HomePage.java:452)
+	at com.automation.exercise.steps.Test22To26Steps.iClickOnViewCartButton(Test22To26Steps.java:18)
+	at ✽.I click on View Cart button(file:///C:/Users/imsky/IdeaProjects/automation-exercise-com/src/test/resources/features/test22to26.feature:23)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.automation.exercise.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>Test Case 22 Add to cart from Recommended items
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded8.jpg' src="../screenshots/embedded8.jpg">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="334"><span class="badge log fail-bg mr-2">Fail</span>Test Case 23 Verify address details in checkout page</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iLaunchTheBrowser()">
+                <span>Given I launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iNavigateToGivenUrl()">
+                <span>And I navigate to given url</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iVerifyThatHomePageIsVisibleSuccessfully()">
+                <span>And I verify that home page is visible successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iClickOnSignupLoginButton(java.lang.String)">
+                <span>When I click on 'Signup / Login' button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iEnterNameAndEmailAddress(java.lang.String,java.lang.String)">
+                <span>And I enter name "Neil" and email "ncstaraag@test.com" address</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iClickSignupButton(java.lang.String)">
+                <span>And I click 'Signup' button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.automation.exercise.steps.Test1To5Steps.iFillDetailsTitlePasswordDOBDayDOBMonthDOBYear(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">
+                <span>And I fill details: Title "Mr" Password "Pen2paper" DOBDay "5" DOBMonth "August" DOBYear "2003"</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#id_gender1"}
+  (Session info: chrome=120.0.6099.130)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4110363b429fac8488ee3f2a9653fd93, findElement {using=id, value=id_gender1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\imsky\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63333}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63333/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4110363b429fac8488ee3f2a9653fd93
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.click(Unknown Source)
+	at com.automation.exercise.utility.Utility.clickOnElement(Utility.java:46)
+	at com.automation.exercise.pages.SignUpPage.selectTitle(SignUpPage.java:119)
+	at com.automation.exercise.steps.Test1To5Steps.iFillDetailsTitlePasswordDOBDayDOBMonthDOBYear(Test1To5Steps.java:81)
+	at ✽.I fill details: Title "Mr" Password "Pen2paper" DOBDay "5" DOBMonth "August" DOBYear "2003"(file:///C:/Users/imsky/IdeaProjects/automation-exercise-com/src/test/resources/features/test22to26.feature:32)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test1To5Steps.iSelectCheckboxSignUpForOurNewsletter()">
+                <span>And I select checkbox Sign up for our newsletter!</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test1To5Steps.iSelectCheckboxReceiveSpecialOffersFromOurPartners()">
+                <span>And I select checkbox Receive special offers from our partners!</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test1To5Steps.iFillDetailsFirstNameLastNameCompanyAddressAddressLineCountryStateCityZipcodeMobileNumber(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">
+                <span>And I fill details: First name "Neil" Last name "Cooper" Company "Cooper & Co" Address "Barr Road" AddressLine "Bath" Country "India" State "Bihar" City "Patna" Zipcode "117 657" Mobile Number "099887 766554"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test1To5Steps.iClickCreateAccountButton(java.lang.String)">
+                <span>And I click 'Create Account button'</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test1To5Steps.iVerifyThatACCOUNTCREATEDPageIsVisible(java.lang.String)">
+                <span>And I verify that 'ACCOUNT CREATED!' page is visible</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test1To5Steps.iClickContinueButton()">
+                <span>And I click Continue button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test1To5Steps.iSeeThatLoggedInAsUsernameIsVisible(java.lang.String)">
+                <span>And I see that 'Logged in as Neil' is visible</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test12To16Steps.iClickOnForAnyProductOnHomePage(java.lang.String)">
+                <span>And I click on "Fancy Green Top" for any product on home page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test12To16Steps.iClickToAddToCartButton(java.lang.String)">
+                <span>And I click to 'Add to cart' button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test22To26Steps.iClickOnContinueShopping()">
+                <span>And I click on Continue Shopping</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test6To11Steps.iClickOnProductsProductsButton(java.lang.String)">
+                <span>And I click on Products 'Products' button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test12To16Steps.iClickOnForAnyProductOnHomePage(java.lang.String)">
+                <span>And I click on "Winter Top" for any product on home page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test12To16Steps.iClickToAddToCartButton(java.lang.String)">
+                <span>And I click to 'Add to cart' button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test12To16Steps.iClickViewCartButton()">
+                <span>And I click View Cart button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test22To26Steps.iVerifyThatCartPageIsDisplayed()">
+                <span>And I verify that cart page is displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test22To26Steps.iClickProceedToCheckout()">
+                <span>And I click Proceed To Checkout</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test1To5Steps.iClickTheDeleteAccountButton(java.lang.String)">
+                <span>Then I click the 'Delete Account' button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test1To5Steps.iVerifyThatACCOUNTDELETEDIsVisibleAndClickContinueButton(java.lang.String)">
+                <span>And I verify that 'ACCOUNT DELETED!' is visible and click Continue button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.automation.exercise.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>Test Case 23 Verify address details in checkout page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded9.jpg' src="../screenshots/embedded9.jpg">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="362"><span class="badge log fail-bg mr-2">Fail</span>Test Case 24 Download Invoice after purchase order</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iLaunchTheBrowser()">
+                <span>Given I launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iNavigateToGivenUrl()">
+                <span>And I navigate to given url</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iVerifyThatHomePageIsVisibleSuccessfully()">
+                <span>And I verify that home page is visible successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test12To16Steps.iClickOnForAnyProductOnHomePage(java.lang.String)">
+                <span>When I click on "Fancy Green Top" for any product on home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test12To16Steps.iClickToAddToCartButton(java.lang.String)">
+                <span>And I click to 'Add to cart' button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test22To26Steps.iClickOnContinueShopping()">
+                <span>And I click on Continue Shopping</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iClickOnProductsProductsButton(java.lang.String)">
+                <span>And I click on Products 'Products' button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test12To16Steps.iClickOnForAnyProductOnHomePage(java.lang.String)">
+                <span>And I click on "Winter Top" for any product on home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test12To16Steps.iClickToAddToCartButton(java.lang.String)">
+                <span>And I click to 'Add to cart' button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test12To16Steps.iClickViewCartButton()">
+                <span>And I click View Cart button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test22To26Steps.iVerifyThatCartPageIsDisplayed()">
+                <span>And I verify that cart page is displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test22To26Steps.iClickProceedToCheckout()">
+                <span>And I click Proceed To Checkout</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test22To26Steps.iClickOnRegisterLoginButton()">
+                <span>And I click on Register Login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iEnterNameAndEmailAddress(java.lang.String,java.lang.String)">
+                <span>And I enter name "Neil" and email "ncstaraam@test.com" address</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iClickSignupButton(java.lang.String)">
+                <span>And I click 'Signup' button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iFillDetailsTitlePasswordDOBDayDOBMonthDOBYear(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">
+                <span>And I fill details: Title "Mr" Password "Pen2paper" DOBDay "5" DOBMonth "August" DOBYear "2003"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iSelectCheckboxSignUpForOurNewsletter()">
+                <span>And I select checkbox Sign up for our newsletter!</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iSelectCheckboxReceiveSpecialOffersFromOurPartners()">
+                <span>And I select checkbox Receive special offers from our partners!</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iFillDetailsFirstNameLastNameCompanyAddressAddressLineCountryStateCityZipcodeMobileNumber(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">
+                <span>And I fill details: First name "Neil" Last name "Cooper" Company "Cooper & Co" Address "Barr Road" AddressLine "Bath" Country "India" State "Bihar" City "Patna" Zipcode "117 657" Mobile Number "099887 766554"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iClickCreateAccountButton(java.lang.String)">
+                <span>And I click 'Create Account button'</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iVerifyThatACCOUNTCREATEDPageIsVisible(java.lang.String)">
+                <span>And I verify that 'ACCOUNT CREATED!' page is visible</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iClickContinueButton()">
+                <span>And I click Continue button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iSeeThatLoggedInAsUsernameIsVisible(java.lang.String)">
+                <span>And I see that 'Logged in as Neil' is visible</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test22To26Steps.iClickCartButton()">
+                <span>And I click Cart button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test22To26Steps.iClickProceedToCheckout()">
+                <span>And I click Proceed To Checkout</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test22To26Steps.iVerifyAddressDetailsAndReviewYourOrder()">
+                <span>And I Verify Address Details and Review Your Order</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test22To26Steps.iEnterDescriptionInCommentTextAreaAndClickPlaceOrder(java.lang.String)">
+                <span>And I enter description in comment text area and click 'Place Order'</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test22To26Steps.iEnterPaymentDetailsNameOnCardCardNumberCVCExpirationMonthAndYear(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">
+                <span>And I enter payment details Name on Card "Neil Cooper" Card Number "4545 6767 3434 1212"  CVC "342" Expiration Month "09" and Year "2027"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test22To26Steps.iClickPayAndConfirmOrderButton()">
+                <span>And I click Pay and Confirm Order button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.automation.exercise.steps.Test22To26Steps.iVerifyTheSuccessMessageYourOrderHasBeenPlacedSuccessfully(java.lang.String)">
+                <span>And I verify the success message 'Your order has been placed successfully!'</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Your order has been placed successfully!')]"}
+  (Session info: chrome=120.0.6099.130)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [200855be90ad4f9ddfcf6f3b9bdf4bb5, findElement {using=xpath, value=//div[contains(text(),'Your order has been placed successfully!')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\imsky\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63382}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63382/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 200855be90ad4f9ddfcf6f3b9bdf4bb5
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.getText(Unknown Source)
+	at com.automation.exercise.utility.Utility.getTextFromElement(Utility.java:55)
+	at com.automation.exercise.pages.PaymentPage.verifyTheSuccessMessageYourOrderHasBeenPlacedSuccessfully(PaymentPage.java:83)
+	at com.automation.exercise.steps.Test22To26Steps.iVerifyTheSuccessMessageYourOrderHasBeenPlacedSuccessfully(Test22To26Steps.java:52)
+	at ✽.I verify the success message 'Your order has been placed successfully!'(file:///C:/Users/imsky/IdeaProjects/automation-exercise-com/src/test/resources/features/test22to26.feature:82)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test22To26Steps.iClickDownloadInvoiceButtonAndVerifyInvoiceIsDownloadedSuccessfully(java.lang.String)">
+                <span>And I click 'Download Invoice' button and verify invoice is downloaded successfully.</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test22To26Steps.iClickContinueButton()">
+                <span>And I Click Continue button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test1To5Steps.iClickTheDeleteAccountButton(java.lang.String)">
+                <span>Then I click the 'Delete Account' button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automation.exercise.steps.Test1To5Steps.iVerifyThatACCOUNTDELETEDIsVisibleAndClickContinueButton(java.lang.String)">
+                <span>And I verify that 'ACCOUNT DELETED!' is visible and click Continue button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.automation.exercise.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>Test Case 24 Download Invoice after purchase order
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded10.jpg' src="../screenshots/embedded10.jpg">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="399"><span class="badge log pass-bg mr-2">Pass</span>Test Case 25 Verify Scroll Up using 'Arrow' button and Scroll Down functionality</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iLaunchTheBrowser()">
+                <span>Given I launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iNavigateToGivenUrl()">
+                <span>And I navigate to given url</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iVerifyThatHomePageIsVisibleSuccessfully()">
+                <span>And I verify that home page is visible successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test22To26Steps.iScrollDownPageToBottom()">
+                <span>When I scroll down page to bottom</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iVerifyTextSUBSCRIPTION(java.lang.String)">
+                <span>And I verify text 'SUBSCRIPTION'</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test22To26Steps.iClickOnArrowAtBottomRightSideToMoveUpward()">
+                <span>Then I click on arrow at bottom right side to move upward</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test22To26Steps.iVerifyThatPageIsScrolledUpAndFullFledgedPracticeWebsiteForAutomationEngineersTextIsVisibleOnScreen(java.lang.String)">
+                <span>And I verify that page is scrolled up and 'Full-Fledged practice website for Automation Engineers' text is visible on screen</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="409"><span class="badge log pass-bg mr-2">Pass</span>Test Case 26 Verify Scroll Up without 'Arrow' button and Scroll Down functionality</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iLaunchTheBrowser()">
+                <span>Given I launch the browser</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iNavigateToGivenUrl()">
+                <span>And I navigate to given url</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test1To5Steps.iVerifyThatHomePageIsVisibleSuccessfully()">
+                <span>And I verify that home page is visible successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test22To26Steps.iScrollDownPageToBottom()">
+                <span>When I scroll down page to bottom</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test6To11Steps.iVerifyTextSUBSCRIPTION(java.lang.String)">
+                <span>And I verify text 'SUBSCRIPTION'</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test22To26Steps.iScrollUpPageToTop()">
+                <span>And I scroll up page to top</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automation.exercise.steps.Test22To26Steps.iVerifyThatPageIsScrolledUpAndFullFledgedPracticeWebsiteForAutomationEngineersTextIsVisibleOnScreen(java.lang.String)">
+                <span>Then I verify that page is scrolled up and 'Full-Fledged practice website for Automation Engineers' text is visible on screen</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">5</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@regression</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@regression</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:18:46 PM</td>
+<td>
+<a href="#" class="linked" test-id='182' id='225'>Test Case 20 Search Products and Verify Cart After Login</a>
+<div class="">
+<span class="badge badge-default">Test 17, Test 18, Test 19, Test 20 and Test 21.Test Case 20 Search Products and Verify Cart After Login</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>16</span>
+<span class='badge log badge-danger'>10</span>
+</span>
+<p class="name">@HU</p>
+<p class="duration text-sm">26 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@HU</h4>
+<span status="pass" class='badge log pass-bg'>16 passed</span>
+<span status="fail" class='badge log badge-danger'>10 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:14:18 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Test Case 6 Contact Us Form</a>
+<div class="">
+<span class="badge badge-default">Test Cases 6, 7, 8, 9, 10 and 11.Test Case 6 Contact Us Form</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:14:54 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='16'>Test Case 7 Verify Test Cases Page</a>
+<div class="">
+<span class="badge badge-default">Test Cases 6, 7, 8, 9, 10 and 11.Test Case 7 Verify Test Cases Page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:15:01 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='24'>Test Case 8 Verify All Products and product detail page</a>
+<div class="">
+<span class="badge badge-default">Test Cases 6, 7, 8, 9, 10 and 11.Test Case 8 Verify All Products and product detail page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:15:12 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='41'>Test Case 9 Search Product</a>
+<div class="">
+<span class="badge badge-default">Test Cases 6, 7, 8, 9, 10 and 11.Test Case 9 Search Product</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:15:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='52'>Test Case 10: Verify Subscription in home page</a>
+<div class="">
+<span class="badge badge-default">Test Cases 6, 7, 8, 9, 10 and 11.Test Case 10: Verify Subscription in home page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:15:27 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='62'>Test Case 11 Verify Subscription in Cart page</a>
+<div class="">
+<span class="badge badge-default">Test Cases 6, 7, 8, 9, 10 and 11.Test Case 11 Verify Subscription in Cart page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:15:35 PM</td>
+<td>
+<a href="#" class="linked" test-id='73' id='74'>Test Case 12 Add Products in Cart</a>
+<div class="">
+<span class="badge badge-default">Test Cases 12, 13, 14, 15 and 16.Test Case 12 Add Products in Cart</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:15:43 PM</td>
+<td>
+<a href="#" class="linked" test-id='73' id='85'>Test Case 13 Verify Product quantity in Cart</a>
+<div class="">
+<span class="badge badge-default">Test Cases 12, 13, 14, 15 and 16.Test Case 13 Verify Product quantity in Cart</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:15:50 PM</td>
+<td>
+<a href="#" class="linked" test-id='73' id='102'>Test Case 14 Place Order Register while Checkout</a>
+<div class="">
+<span class="badge badge-default">Test Cases 12, 13, 14, 15 and 16.Test Case 14 Place Order Register while Checkout</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:16:16 PM</td>
+<td>
+<a href="#" class="linked" test-id='73' id='133'>Test Case 15: Place Order: Register before Checkout</a>
+<div class="">
+<span class="badge badge-default">Test Cases 12, 13, 14, 15 and 16.Test Case 15: Place Order: Register before Checkout</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:16:42 PM</td>
+<td>
+<a href="#" class="linked" test-id='73' id='161'>Test Case 16: Place Order: Login before Checkout</a>
+<div class="">
+<span class="badge badge-default">Test Cases 12, 13, 14, 15 and 16.Test Case 16: Place Order: Login before Checkout</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:17:26 PM</td>
+<td>
+<a href="#" class="linked" test-id='182' id='183'>Test Case 17 Remove Products From Cart</a>
+<div class="">
+<span class="badge badge-default">Test 17, Test 18, Test 19, Test 20 and Test 21.Test Case 17 Remove Products From Cart</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:17:35 PM</td>
+<td>
+<a href="#" class="linked" test-id='182' id='200'>Test Case 18 View Category Products</a>
+<div class="">
+<span class="badge badge-default">Test 17, Test 18, Test 19, Test 20 and Test 21.Test Case 18 View Category Products</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:17:42 PM</td>
+<td>
+<a href="#" class="linked" test-id='182' id='213'>Test Case 19 View & Cart Brand Products</a>
+<div class="">
+<span class="badge badge-default">Test 17, Test 18, Test 19, Test 20 and Test 21.Test Case 19 View & Cart Brand Products</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:18:46 PM</td>
+<td>
+<a href="#" class="linked" test-id='182' id='225'>Test Case 20 Search Products and Verify Cart After Login</a>
+<div class="">
+<span class="badge badge-default">Test 17, Test 18, Test 19, Test 20 and Test 21.Test Case 20 Search Products and Verify Cart After Login</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:19:15 PM</td>
+<td>
+<a href="#" class="linked" test-id='182' id='242'>Test Case 21 Add review on product</a>
+<div class="">
+<span class="badge badge-default">Test 17, Test 18, Test 19, Test 20 and Test 21.Test Case 21 Add review on product</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:19:28 PM</td>
+<td>
+<a href="#" class="linked" test-id='255' id='256'>Test Case 1 Register User</a>
+<div class="">
+<span class="badge badge-default">Test Cases 1, 2, 3, 4, and 5.Test Case 1 Register User</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:19:43 PM</td>
+<td>
+<a href="#" class="linked" test-id='255' id='277'>Test Case 2: Login User with correct email and password</a>
+<div class="">
+<span class="badge badge-default">Test Cases 1, 2, 3, 4, and 5.Test Case 2: Login User with correct email and password</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:19:52 PM</td>
+<td>
+<a href="#" class="linked" test-id='255' id='288'>Test Case 3: Login User with incorrect email and password</a>
+<div class="">
+<span class="badge badge-default">Test Cases 1, 2, 3, 4, and 5.Test Case 3: Login User with incorrect email and password</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:19:57 PM</td>
+<td>
+<a href="#" class="linked" test-id='255' id='299'>Test Case 4: Logout User</a>
+<div class="">
+<span class="badge badge-default">Test Cases 1, 2, 3, 4, and 5.Test Case 4: Logout User</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:20:04 PM</td>
+<td>
+<a href="#" class="linked" test-id='255' id='312'>Test Case 5: Register User with existing email</a>
+<div class="">
+<span class="badge badge-default">Test Cases 1, 2, 3, 4, and 5.Test Case 5: Register User with existing email</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:20:12 PM</td>
+<td>
+<a href="#" class="linked" test-id='323' id='324'>Test Case 22 Add to cart from Recommended items</a>
+<div class="">
+<span class="badge badge-default">Test Cases 22, 23, 24, 25 and 26.Test Case 22 Add to cart from Recommended items</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:20:16 PM</td>
+<td>
+<a href="#" class="linked" test-id='323' id='334'>Test Case 23 Verify address details in checkout page</a>
+<div class="">
+<span class="badge badge-default">Test Cases 22, 23, 24, 25 and 26.Test Case 23 Verify address details in checkout page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:20:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='323' id='362'>Test Case 24 Download Invoice after purchase order</a>
+<div class="">
+<span class="badge badge-default">Test Cases 22, 23, 24, 25 and 26.Test Case 24 Download Invoice after purchase order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:21:44 PM</td>
+<td>
+<a href="#" class="linked" test-id='323' id='399'>Test Case 25 Verify Scroll Up using 'Arrow' button and Scroll Down functionality</a>
+<div class="">
+<span class="badge badge-default">Test Cases 22, 23, 24, 25 and 26.Test Case 25 Verify Scroll Up using 'Arrow' button and Scroll Down functionality</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:22:09 PM</td>
+<td>
+<a href="#" class="linked" test-id='323' id='409'>Test Case 26 Verify Scroll Up without 'Arrow' button and Scroll Down functionality</a>
+<div class="">
+<span class="badge badge-default">Test Cases 22, 23, 24, 25 and 26.Test Case 26 Verify Scroll Up without 'Arrow' button and Scroll Down functionality</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>16</span>
+<span class='badge log badge-danger'>10</span>
+</span>
+<p class="name">@Regression</p>
+<p class="duration text-sm">26 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Regression</h4>
+<span status="pass" class='badge log pass-bg'>16 passed</span>
+<span status="fail" class='badge log badge-danger'>10 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:14:18 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Test Case 6 Contact Us Form</a>
+<div class="">
+<span class="badge badge-default">Test Cases 6, 7, 8, 9, 10 and 11.Test Case 6 Contact Us Form</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:14:54 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='16'>Test Case 7 Verify Test Cases Page</a>
+<div class="">
+<span class="badge badge-default">Test Cases 6, 7, 8, 9, 10 and 11.Test Case 7 Verify Test Cases Page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:15:01 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='24'>Test Case 8 Verify All Products and product detail page</a>
+<div class="">
+<span class="badge badge-default">Test Cases 6, 7, 8, 9, 10 and 11.Test Case 8 Verify All Products and product detail page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:15:12 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='41'>Test Case 9 Search Product</a>
+<div class="">
+<span class="badge badge-default">Test Cases 6, 7, 8, 9, 10 and 11.Test Case 9 Search Product</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:15:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='52'>Test Case 10: Verify Subscription in home page</a>
+<div class="">
+<span class="badge badge-default">Test Cases 6, 7, 8, 9, 10 and 11.Test Case 10: Verify Subscription in home page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:15:27 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='62'>Test Case 11 Verify Subscription in Cart page</a>
+<div class="">
+<span class="badge badge-default">Test Cases 6, 7, 8, 9, 10 and 11.Test Case 11 Verify Subscription in Cart page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:15:35 PM</td>
+<td>
+<a href="#" class="linked" test-id='73' id='74'>Test Case 12 Add Products in Cart</a>
+<div class="">
+<span class="badge badge-default">Test Cases 12, 13, 14, 15 and 16.Test Case 12 Add Products in Cart</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:15:43 PM</td>
+<td>
+<a href="#" class="linked" test-id='73' id='85'>Test Case 13 Verify Product quantity in Cart</a>
+<div class="">
+<span class="badge badge-default">Test Cases 12, 13, 14, 15 and 16.Test Case 13 Verify Product quantity in Cart</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:15:50 PM</td>
+<td>
+<a href="#" class="linked" test-id='73' id='102'>Test Case 14 Place Order Register while Checkout</a>
+<div class="">
+<span class="badge badge-default">Test Cases 12, 13, 14, 15 and 16.Test Case 14 Place Order Register while Checkout</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:16:16 PM</td>
+<td>
+<a href="#" class="linked" test-id='73' id='133'>Test Case 15: Place Order: Register before Checkout</a>
+<div class="">
+<span class="badge badge-default">Test Cases 12, 13, 14, 15 and 16.Test Case 15: Place Order: Register before Checkout</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:16:42 PM</td>
+<td>
+<a href="#" class="linked" test-id='73' id='161'>Test Case 16: Place Order: Login before Checkout</a>
+<div class="">
+<span class="badge badge-default">Test Cases 12, 13, 14, 15 and 16.Test Case 16: Place Order: Login before Checkout</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:17:26 PM</td>
+<td>
+<a href="#" class="linked" test-id='182' id='183'>Test Case 17 Remove Products From Cart</a>
+<div class="">
+<span class="badge badge-default">Test 17, Test 18, Test 19, Test 20 and Test 21.Test Case 17 Remove Products From Cart</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:17:35 PM</td>
+<td>
+<a href="#" class="linked" test-id='182' id='200'>Test Case 18 View Category Products</a>
+<div class="">
+<span class="badge badge-default">Test 17, Test 18, Test 19, Test 20 and Test 21.Test Case 18 View Category Products</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:17:42 PM</td>
+<td>
+<a href="#" class="linked" test-id='182' id='213'>Test Case 19 View & Cart Brand Products</a>
+<div class="">
+<span class="badge badge-default">Test 17, Test 18, Test 19, Test 20 and Test 21.Test Case 19 View & Cart Brand Products</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:18:46 PM</td>
+<td>
+<a href="#" class="linked" test-id='182' id='225'>Test Case 20 Search Products and Verify Cart After Login</a>
+<div class="">
+<span class="badge badge-default">Test 17, Test 18, Test 19, Test 20 and Test 21.Test Case 20 Search Products and Verify Cart After Login</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:19:15 PM</td>
+<td>
+<a href="#" class="linked" test-id='182' id='242'>Test Case 21 Add review on product</a>
+<div class="">
+<span class="badge badge-default">Test 17, Test 18, Test 19, Test 20 and Test 21.Test Case 21 Add review on product</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:19:28 PM</td>
+<td>
+<a href="#" class="linked" test-id='255' id='256'>Test Case 1 Register User</a>
+<div class="">
+<span class="badge badge-default">Test Cases 1, 2, 3, 4, and 5.Test Case 1 Register User</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:19:43 PM</td>
+<td>
+<a href="#" class="linked" test-id='255' id='277'>Test Case 2: Login User with correct email and password</a>
+<div class="">
+<span class="badge badge-default">Test Cases 1, 2, 3, 4, and 5.Test Case 2: Login User with correct email and password</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:19:52 PM</td>
+<td>
+<a href="#" class="linked" test-id='255' id='288'>Test Case 3: Login User with incorrect email and password</a>
+<div class="">
+<span class="badge badge-default">Test Cases 1, 2, 3, 4, and 5.Test Case 3: Login User with incorrect email and password</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:19:57 PM</td>
+<td>
+<a href="#" class="linked" test-id='255' id='299'>Test Case 4: Logout User</a>
+<div class="">
+<span class="badge badge-default">Test Cases 1, 2, 3, 4, and 5.Test Case 4: Logout User</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:20:04 PM</td>
+<td>
+<a href="#" class="linked" test-id='255' id='312'>Test Case 5: Register User with existing email</a>
+<div class="">
+<span class="badge badge-default">Test Cases 1, 2, 3, 4, and 5.Test Case 5: Register User with existing email</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:20:12 PM</td>
+<td>
+<a href="#" class="linked" test-id='323' id='324'>Test Case 22 Add to cart from Recommended items</a>
+<div class="">
+<span class="badge badge-default">Test Cases 22, 23, 24, 25 and 26.Test Case 22 Add to cart from Recommended items</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:20:16 PM</td>
+<td>
+<a href="#" class="linked" test-id='323' id='334'>Test Case 23 Verify address details in checkout page</a>
+<div class="">
+<span class="badge badge-default">Test Cases 22, 23, 24, 25 and 26.Test Case 23 Verify address details in checkout page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:20:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='323' id='362'>Test Case 24 Download Invoice after purchase order</a>
+<div class="">
+<span class="badge badge-default">Test Cases 22, 23, 24, 25 and 26.Test Case 24 Download Invoice after purchase order</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:21:44 PM</td>
+<td>
+<a href="#" class="linked" test-id='323' id='399'>Test Case 25 Verify Scroll Up using 'Arrow' button and Scroll Down functionality</a>
+<div class="">
+<span class="badge badge-default">Test Cases 22, 23, 24, 25 and 26.Test Case 25 Verify Scroll Up using 'Arrow' button and Scroll Down functionality</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:22:09 PM</td>
+<td>
+<a href="#" class="linked" test-id='323' id='409'>Test Case 26 Verify Scroll Up without 'Arrow' button and Scroll Down functionality</a>
+<div class="">
+<span class="badge badge-default">Test Cases 22, 23, 24, 25 and 26.Test Case 26 Verify Scroll Up without 'Arrow' button and Scroll Down functionality</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+<span class='badge log badge-danger'>3</span>
+</span>
+<p class="name">@Sanity</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Sanity</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+<span status="fail" class='badge log badge-danger'>3 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:14:18 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Test Case 6 Contact Us Form</a>
+<div class="">
+<span class="badge badge-default">Test Cases 6, 7, 8, 9, 10 and 11.Test Case 6 Contact Us Form</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:15:35 PM</td>
+<td>
+<a href="#" class="linked" test-id='73' id='74'>Test Case 12 Add Products in Cart</a>
+<div class="">
+<span class="badge badge-default">Test Cases 12, 13, 14, 15 and 16.Test Case 12 Add Products in Cart</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:17:26 PM</td>
+<td>
+<a href="#" class="linked" test-id='182' id='183'>Test Case 17 Remove Products From Cart</a>
+<div class="">
+<span class="badge badge-default">Test 17, Test 18, Test 19, Test 20 and Test 21.Test Case 17 Remove Products From Cart</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:19:28 PM</td>
+<td>
+<a href="#" class="linked" test-id='255' id='256'>Test Case 1 Register User</a>
+<div class="">
+<span class="badge badge-default">Test Cases 1, 2, 3, 4, and 5.Test Case 1 Register User</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:20:12 PM</td>
+<td>
+<a href="#" class="linked" test-id='323' id='324'>Test Case 22 Add to cart from Recommended items</a>
+<div class="">
+<span class="badge badge-default">Test Cases 22, 23, 24, 25 and 26.Test Case 22 Add to cart from Recommended items</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>6</span>
+<span class='badge log badge-danger'>4</span>
+</span>
+<p class="name">@Smoke</p>
+<p class="duration text-sm">10 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Smoke</h4>
+<span status="pass" class='badge log pass-bg'>6 passed</span>
+<span status="fail" class='badge log badge-danger'>4 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:14:18 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Test Case 6 Contact Us Form</a>
+<div class="">
+<span class="badge badge-default">Test Cases 6, 7, 8, 9, 10 and 11.Test Case 6 Contact Us Form</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:14:54 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='16'>Test Case 7 Verify Test Cases Page</a>
+<div class="">
+<span class="badge badge-default">Test Cases 6, 7, 8, 9, 10 and 11.Test Case 7 Verify Test Cases Page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:15:35 PM</td>
+<td>
+<a href="#" class="linked" test-id='73' id='74'>Test Case 12 Add Products in Cart</a>
+<div class="">
+<span class="badge badge-default">Test Cases 12, 13, 14, 15 and 16.Test Case 12 Add Products in Cart</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:15:43 PM</td>
+<td>
+<a href="#" class="linked" test-id='73' id='85'>Test Case 13 Verify Product quantity in Cart</a>
+<div class="">
+<span class="badge badge-default">Test Cases 12, 13, 14, 15 and 16.Test Case 13 Verify Product quantity in Cart</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:17:26 PM</td>
+<td>
+<a href="#" class="linked" test-id='182' id='183'>Test Case 17 Remove Products From Cart</a>
+<div class="">
+<span class="badge badge-default">Test 17, Test 18, Test 19, Test 20 and Test 21.Test Case 17 Remove Products From Cart</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:17:35 PM</td>
+<td>
+<a href="#" class="linked" test-id='182' id='200'>Test Case 18 View Category Products</a>
+<div class="">
+<span class="badge badge-default">Test 17, Test 18, Test 19, Test 20 and Test 21.Test Case 18 View Category Products</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:19:28 PM</td>
+<td>
+<a href="#" class="linked" test-id='255' id='256'>Test Case 1 Register User</a>
+<div class="">
+<span class="badge badge-default">Test Cases 1, 2, 3, 4, and 5.Test Case 1 Register User</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:19:43 PM</td>
+<td>
+<a href="#" class="linked" test-id='255' id='277'>Test Case 2: Login User with correct email and password</a>
+<div class="">
+<span class="badge badge-default">Test Cases 1, 2, 3, 4, and 5.Test Case 2: Login User with correct email and password</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:20:12 PM</td>
+<td>
+<a href="#" class="linked" test-id='323' id='324'>Test Case 22 Add to cart from Recommended items</a>
+<div class="">
+<span class="badge badge-default">Test Cases 22, 23, 24, 25 and 26.Test Case 22 Add to cart from Recommended items</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:20:16 PM</td>
+<td>
+<a href="#" class="linked" test-id='323' id='334'>Test Case 23 Verify address details in checkout page</a>
+<div class="">
+<span class="badge badge-default">Test Cases 22, 23, 24, 25 and 26.Test Case 23 Verify address details in checkout page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">4</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>7</span>
+</span>
+<p class="name">org.openqa.selenium.NoSuchElementException</p>
+<p class="duration text-sm">7 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.NoSuchElementException</h4>
+<span status="fail" class='badge log badge-danger'>7 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:15:56 PM</td>
+<td>
+<a href="#" class="linked" test-id='73' id='111'>And I click Proceed To Checkout</a>
+<div class="">
+<span class="badge badge-default">Test Cases 12, 13, 14, 15 and 16.Test Case 14 Place Order Register while Checkout.And I click Proceed To Checkout</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:16:21 PM</td>
+<td>
+<a href="#" class="linked" test-id='73' id='141'>And I fill details: Title "Mr" Password "Pen2paper" DOBDay "5" DOBMonth "August" DOBYear "2003"</a>
+<div class="">
+<span class="badge badge-default">Test Cases 12, 13, 14, 15 and 16.Test Case 15: Place Order: Register before Checkout.And I fill details: Title "Mr" Password "Pen2paper" DOBDay "5" DOBMonth "August" DOBYear "2003"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:16:45 PM</td>
+<td>
+<a href="#" class="linked" test-id='73' id='166'>When I click 'Signup / Login' button</a>
+<div class="">
+<span class="badge badge-default">Test Cases 12, 13, 14, 15 and 16.Test Case 16: Place Order: Login before Checkout.When I click 'Signup / Login' button</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:18:05 PM</td>
+<td>
+<a href="#" class="linked" test-id='182' id='221'>And I verify that user is navigated to brand page "TEXT"</a>
+<div class="">
+<span class="badge badge-default">Test 17, Test 18, Test 19, Test 20 and Test 21.Test Case 19 View & Cart Brand Products.And I verify that user is navigated to brand page "TEXT"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:18:54 PM</td>
+<td>
+<a href="#" class="linked" test-id='182' id='235'>And I click on View Cart button</a>
+<div class="">
+<span class="badge badge-default">Test 17, Test 18, Test 19, Test 20 and Test 21.Test Case 20 Search Products and Verify Cart After Login.And I click on View Cart button</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:20:21 PM</td>
+<td>
+<a href="#" class="linked" test-id='323' id='342'>And I fill details: Title "Mr" Password "Pen2paper" DOBDay "5" DOBMonth "August" DOBYear "2003"</a>
+<div class="">
+<span class="badge badge-default">Test Cases 22, 23, 24, 25 and 26.Test Case 23 Verify address details in checkout page.And I fill details: Title "Mr" Password "Pen2paper" DOBDay "5" DOBMonth "August" DOBYear "2003"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:21:03 PM</td>
+<td>
+<a href="#" class="linked" test-id='323' id='393'>And I verify the success message 'Your order has been placed successfully!'</a>
+<div class="">
+<span class="badge badge-default">Test Cases 22, 23, 24, 25 and 26.Test Case 24 Download Invoice after purchase order.And I verify the success message 'Your order has been placed successfully!'</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.StaleElementReferenceException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.StaleElementReferenceException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:15:40 PM</td>
+<td>
+<a href="#" class="linked" test-id='73' id='81'>And I click Continue Shopping button</a>
+<div class="">
+<span class="badge badge-default">Test Cases 12, 13, 14, 15 and 16.Test Case 12 Add Products in Cart.And I click Continue Shopping button</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.JavascriptException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.JavascriptException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:20:15 PM</td>
+<td>
+<a href="#" class="linked" test-id='323' id='332'>Then I click on View Cart button</a>
+<div class="">
+<span class="badge badge-default">Test Cases 22, 23, 24, 25 and 26.Test Case 22 Add to cart from Recommended items.Then I click on View Cart button</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:17:34 PM</td>
+<td>
+<a href="#" class="linked" test-id='182' id='198'>Then I verify that product is removed from the cart</a>
+<div class="">
+<span class="badge badge-default">Test 17, Test 18, Test 19, Test 20 and Test 21.Test Case 17 Remove Products From Cart.Then I verify that product is removed from the cart</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
